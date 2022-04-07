@@ -6,6 +6,7 @@ import { ErrorComponent } from './page/error/error.component';
 import { JuegosComponent } from './page/juegos/juegos.component';
 import { PreguntadosComponent } from './page/juegos2022/preguntados/preguntados.component';
 import { LoginComponent } from './page/login/login.component';
+import { QuienSoyComponent } from './page/quien-soy/quien-soy.component';
 import { RegistroComponent } from './page/registro/registro.component';
 import { TatetiComponent } from './page/tateti/tateti.component';
 
@@ -23,7 +24,7 @@ const routes: Routes = [
       {path:"tateti", component:TatetiComponent},
       {path:"preguntados", component:PreguntadosComponent},
   ]},
-
+  {path:"quien-soy", component:QuienSoyComponent},
   {path:"", redirectTo:"/home",pathMatch:"full"},
   {path:"**", component:ErrorComponent}
 ];
