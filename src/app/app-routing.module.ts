@@ -3,6 +3,7 @@ import { Component, NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { BienvenidoComponent } from './page/bienvenido/bienvenido.component';
 import { ErrorComponent } from './page/error/error.component';
+import { HomeComponent } from './page/home/home.component';
 import { JuegosComponent } from './page/juegos/juegos.component';
 import { PreguntadosComponent } from './page/juegos2022/preguntados/preguntados.component';
 import { LoginComponent } from './page/login/login.component';
@@ -13,12 +14,8 @@ import { TatetiComponent } from './page/tateti/tateti.component';
 const routes: Routes = [
   {path:"login",component:LoginComponent},
   {path:"registro", component:RegistroComponent},
+  //{path:"home", component:HomeComponent},
   {path:"home", component:BienvenidoComponent},
-  
-  /*{path:"juegos", component:JuegosComponent},
-  {path:"juegos/tateti", component:TatetiComponent},
-  {path:"juegos/preguntados", component:PreguntadosComponent},
-*/
   {path:"juegos", component:JuegosComponent,
     children:[
       {path:"tateti", component:TatetiComponent},

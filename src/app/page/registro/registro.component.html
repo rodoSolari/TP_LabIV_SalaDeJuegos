@@ -1,1 +1,27 @@
-<p>registro works!</p>
+<main class="form-signin">
+    <form>
+      <div *ngIf="usuario">
+        <img class="mb-4" src="../assets/brand/bootstrap-logo.svg" alt="" width="72" height="57">
+        <h1 class="h3 mb-3 fw-normal">Registrarte</h1>
+    
+        <div class="form-floating">
+          <input type="email" class="form-control" [(ngModel)]="usuario.email" placeholder="ingrese su mail">
+          <label for="floatingInput">Ingrese su mail</label>
+        </div>
+        <div class="form-floating">
+          <input type="password" class="form-control" [(ngModel)]="usuario.clave" placeholder="ingrese su clave">
+          <label for="floatingPassword">contraseña</label>
+        </div>
+    
+        <div class="checkbox mb-3">
+          <!--<label>
+            <input type="checkbox" value="remember-me"> Remember me
+          </label>-->
+        </div>
+        <button class="w-100 btn btn-lg btn-success btn-block" (click)="crearUsuario()">Registrarme</button>
+        <p class="mt-5 mb-3 text-muted">&copy; 2022</p>
+      </div>
+    </form>
+  </main>
+
+  
